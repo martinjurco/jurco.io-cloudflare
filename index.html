@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin Jurco — Bitcoin Courses &amp; Consultations</title>
+<meta name="description" content="Martin Jurco — Bitcoin education, courses for beginners and advanced, and mining consultations. Bitcoin maximalist and sovereign individual.">
+<link rel="canonical" href="https://jurco.io/">
+<link rel="alternate" hreflang="en" href="https://jurco.io/">
+<link rel="alternate" hreflang="cs" href="https://jurco.io/cs/">
+<link rel="alternate" hreflang="sk" href="https://jurco.io/sk/">
+<link rel="alternate" hreflang="x-default" href="https://jurco.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Martin Jurco — Bitcoin Courses &amp; Consultations">
+<meta property="og:description" content="Martin Jurco — Bitcoin education, courses for beginners and advanced, and mining consultations. Bitcoin maximalist and sovereign individual.">
+<meta property="og:url" content="https://jurco.io/">
+<meta property="og:image" content="https://jurco.io/assets/martin-portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0B0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7931A'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' font-family='monospace' font-weight='700' fill='%230B0B0A'%3E%E2%82%BF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B0A}
+a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
+::selection{background:#F7931A;color:#0B0B0A}
+.cur{display:inline-block;animation:blink 1.06s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.navlink{color:#9A978E;transition:color .15s}
+.navlink:hover{color:#ECEAE3}
+.navlink:hover .br{opacity:1}
+.br{opacity:0;transition:opacity .15s}
+.lang{color:#6B685F;padding:4px 6px}
+.lang:hover{color:#ECEAE3}
+.card{position:relative;transition:background .2s,border-color .2s,transform .2s}
+.card:hover{background:#151513;border-color:#4A4840;transform:translateY(-3px)}
+.card:hover .hash{color:#ECEAE3}
+.crn{position:absolute;width:10px;height:10px;border-color:#6B685F;border-style:solid}
+.btn{transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 #ECEAE3}
+.ghost{transition:background .15s,color .15s}
+.ghost:hover{background:#ECEAE3 !important;color:#0B0B0A !important;border-color:#ECEAE3 !important}
+.row{transition:background .15s,padding .15s}
+.row:hover{background:#121210;padding-left:12px}
+.pill{transition:background .15s,color .15s,border-color .15s}
+.pill:hover{background:#ECEAE3;color:#0B0B0A;border-color:#ECEAE3}
+.blk{transition:background .2s,transform .2s}
+.blk:hover{background:#151513;transform:translateY(-4px)}
+#bitcoin strong{color:#ECEAE3;font-weight:700}
+.cry{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;padding:12px 0;border-top:1px solid #26251F;transition:padding .15s,background .15s}
+.cry:hover{padding-left:8px;background:#121210}
+.cry-n{font-size:11px;color:#6B685F;width:20px}
+.cry-t{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:500;color:#ECEAE3;flex:1 1 auto}
+.cry-g{font-size:12px;color:#9A978E;margin-left:auto}
+.lvl{display:flex;align-items:center;gap:12px;padding:7px 0;border-top:1px dashed #26251F}
+.lvl-n{width:42px;flex:none;font-size:11px;color:#6B685F}
+.lvl-t{flex:1 1 auto;color:#B5B2A9}
+.lvl-b{display:block;flex:none;width:96px;height:4px;background:#26251F}
+.lvl-b span{display:block;height:4px;transition:filter .2s}
+.card:hover .lvl-b span{filter:brightness(1.25)}
+.portrait img{filter:brightness(.9) contrast(1.05);transition:transform .6s ease,filter .3s}
+.portrait:hover img{transform:scale(1.03);filter:none}
+.dots{background-image:radial-gradient(#22211D 1px,transparent 1px);background-size:24px 24px}
+@media (prefers-reduced-motion: reduce){.cur{animation:none}.card,.btn,.row,.blk{transition:none}}
+</style>
+</head>
+<body>
+<div class="dots" style="min-height: 100vh; background-color: #0B0B0A; color: #ECEAE3; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #26251F">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; letter-spacing: 0.02em">
+<span style="display: inline-flex; width: 28px; height: 28px; align-items: center; justify-content: center; background-color: #F7931A; color: #0B0B0A; font-size: 14px">₿</span>
+<span>jurco<span style="color: #F7931A">.io</span><span class="cur" style="color: #F7931A">_</span></span>
+</a>
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 13px; text-transform: lowercase">
+<a class="navlink" href="#courses"><span class="br">[</span>courses<span class="br">]</span></a>
+<a class="navlink" href="#manifesto"><span class="br">[</span>manifesto<span class="br">]</span></a>
+<a class="navlink" href="#resources"><span class="br">[</span>resources<span class="br">]</span></a>
+<a class="navlink" href="#bio"><span class="br">[</span>bio<span class="br">]</span></a>
+<a class="navlink" href="#projects"><span class="br">[</span>projects<span class="br">]</span></a>
+<span style="display: inline-flex; align-items: center; font-size: 12px; text-transform: uppercase; border: 1px solid #26251F">
+<a class="lang" href="./" aria-current="page" style="color: #0B0B0A; background-color: #F7931A">EN</a><a class="lang" href="cs/" lang="cs">CZ</a><a class="lang" href="sk/" lang="sk">SK</a>
+</span>
+<a class="ghost" href="#contact" style="padding: 8px 14px; border: 1px solid #ECEAE3; color: #ECEAE3; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">get in touch →</a>
+</nav>
+</header>
+
+<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 112px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 13px; color: #9A978E; letter-spacing: 0.08em"><span style="color: #F7931A">$</span> bitcoin courses &amp; consultations</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 128px); line-height: 0.92; letter-spacing: -0.04em">Martin<br>Jurco<span style="color: #F7931A">.</span></h1>
+<div aria-label="bitcoin maximalist, sovereign individual, colonizer of cyberspace, educator, node operator, miner" style="font-size: clamp(16px, 2vw, 22px); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap">
+<span aria-hidden="true" style="color: #9A978E">&gt;</span>
+<span id="tagline" aria-hidden="true" style="color: #F7931A">bitcoin maximalist</span><span aria-hidden="true" class="cur" style="color: #ECEAE3">█</span>
+</div>
+<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoin education for people who'd rather verify than trust. Courses from acquiring your first sats to advanced trading, and hands-on consultations for miners.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px">
+<a class="btn" href="#courses" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">explore courses
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="ghost" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #4A4840; color: #ECEAE3">get in touch</a>
+</div>
+</div>
+
+<figure class="portrait" style="flex: 1 1 340px; max-width: 460px; min-width: 0; margin: 0; border: 1px solid #26251F; background-color: #0F0F0D; position: relative">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px; border-color: #F7931A"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0; border-color: #F7931A"></span>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid #26251F; font-size: 12px; color: #9A978E">
+<div aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 9px; height: 9px; border: 1px solid #6B685F"></span><span style="width: 9px; height: 9px; border: 1px solid #6B685F"></span><span style="width: 9px; height: 9px; background-color: #F7931A"></span></div>
+<span>~/jurco — portrait.jpg</span>
+</div>
+<div style="overflow: hidden; aspect-ratio: 4 / 5">
+<img src="./assets/martin-portrait.jpg" alt="Martin Jurco" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%">
+</div>
+<figcaption style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border-top: 1px solid #26251F; font-size: 12px; color: #9A978E">
+<span>martin jurco</span><span style="color: #F7931A">proof of human ✓</span>
+</figcaption>
+</figure>
+</section>
+
+<div aria-hidden="true" style="border-top: 1px solid #26251F; border-bottom: 1px solid #26251F; overflow: hidden; white-space: nowrap; font-size: 12px; color: #6B685F; padding: 12px 0; letter-spacing: 0.12em">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; overflow: hidden">VIRES IN NUMERIS · DON'T TRUST, VERIFY · NOT YOUR KEYS, NOT YOUR BITCOIN · HODL · STACKING SATS · BE YOUR OWN BANK · NUMBER GO UP! · VIRES IN NUMERIS · DON'T TRUST, VERIFY</div>
+</div>
+
+<section id="courses" style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x01 // courses</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Bitcoin education.<br><span style="color: #6B685F">From first sats to mining.</span></h2>
+</div>
+<p style="margin: 0; max-width: 380px; color: #9A978E; font-size: 14px">No hype, no altcoins, no shortcuts. Pick the track that matches where you are.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #26251F; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_I</span><span>beginner · ELI5</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Bitcoin from zero</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">What Bitcoin is, why it matters, and how to hold it yourself without a custodian.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> your first wallet, set up in minutes</div>
+<div><span style="color: #F7931A">+</span> buy your first sats without getting ripped off</div>
+<div><span style="color: #F7931A">+</span> send your first transaction (easier than you think)</div>
+<div><span style="color: #F7931A">+</span> seed phrases: guard them like gold</div>
+<div><span style="color: #F7931A">+</span> stack quietly: privacy basics</div>
+<div><span style="color: #F7931A">+</span> spot scams &amp; shitcoins from a mile away</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">39 <span style="font-size: 14px; color: #9A978E">EUR</span></span>
+<a class="ghost" href="mailto:martin@jurco.io?subject=Crash%20Course%20Order" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #4A4840; font-size: 13px">order ELI5 →</a>
+</div>
+</article>
+
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #F7931A; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_II</span><span style="color: #F7931A">advanced</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Think in <span style="color: #F7931A">₿</span>itcoin</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">You own sats. Now learn why they matter — <span style="color: #ECEAE3">and how to keep your head when the market loses its own.</span> Cycles, volatility and FUD, decoded.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> why bitcoin is a new asset class, not a stock</div>
+<div><span style="color: #F7931A">+</span> reading price cycles instead of reacting to them</div>
+<div><span style="color: #F7931A">+</span> staying calm when FUD hits the headlines</div>
+<div><span style="color: #F7931A">+</span> finding your edge without overtrading</div>
+<div><span style="color: #F7931A">+</span> DCA &amp; HODL: boring by design</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">299 <span style="font-size: 14px; color: #9A978E">EUR</span></span>
+<a class="btn" href="mailto:martin@jurco.io?subject=Advanced%20Course%20Order" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; background-color: #F7931A; color: #0B0B0A; font-weight: 700; font-size: 13px">order advanced →</a>
+</div>
+</article>
+
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #26251F; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_III</span><span>1:1 consultation</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Watts into <span style="color: #F7931A">Sats</span></h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">From one home rig to a full operation. Hardware, power and hard numbers — <span style="color: #ECEAE3">so you know it pays before you plug in.</span></p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> hardware that earns its keep</div>
+<div><span style="color: #F7931A">+</span> cheap power, cool machines, quiet neighbours</div>
+<div><span style="color: #F7931A">+</span> profitability math before you spend a sat</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">49 <span style="font-size: 14px; color: #9A978E">EUR / hour</span></span>
+<a class="ghost" href="mailto:martin@jurco.io?subject=Consultation%20Booking" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #4A4840; font-size: 13px">book →</a>
+</div>
+</article>
+</div>
+</section>
+
+<section id="manifesto" style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="font-size: 13px; color: #F7931A">0x02 // manifesto</div>
+<blockquote style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.04em">Don't trust.<br><span style="color: #F7931A">Verify.</span></blockquote>
+<div style="display: flex; flex-wrap: wrap; border-top: 1px solid #26251F">
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[01]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Self-custody first</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Every course ends with your keys in your hands, not on an exchange.</p>
+</div>
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[02]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Bitcoin only</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">No tokens, no shitcoin detours. One protocol, understood properly.</p>
+</div>
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[03]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Sovereign by default</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Privacy, independence and a low time preference — the point of it all.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bitcoin" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 24px">
+<div style="font-size: 13px; color: #F7931A">0x03 // why bitcoin</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(48px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.04em"><span style="color: #F7931A">₿</span>itcoin</h2>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.25; font-weight: 500; max-width: 440px">A fundamentally new kind of absolutely scarce money that has never existed before.</p>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px; color: #B5B2A9; font-size: 15px; line-height: 1.75; max-width: 680px">
+<p style="margin: 0"><strong>Bitcoin</strong>, often referred to as a <strong>digital currency</strong>, is an emerging technology that has been in existence for over a decade. It is not simply a new form of <strong>PayPal</strong>; rather, it represents a fundamentally new kind of <strong>absolutely scarce money</strong> that has never existed before. This <strong>groundbreaking</strong> and <strong>disruptive innovation</strong> offers unique features, such as <strong>uncensorable transactions</strong>, <strong>protection from confiscation</strong>, and a robust design that makes it <strong>ultra-hard type of money</strong> and therefore an <strong>ideal store of value</strong> for the <strong>21st century</strong>.</p>
+<p style="margin: 0"><strong>Bitcoin</strong> appeals to those seeking a <strong>hedge against worst-case economic scenarios</strong>. It <strong>offers protection</strong> against <strong>inflation</strong>, <strong>security</strong> in the face of potential <strong>bank failures</strong>, and a <strong>safe haven</strong> amidst the global environment of zero or negative real interest rates. However, it is important to acknowledge the <strong>challenge</strong> associated with Bitcoin, such as its <strong>short-term volatility.</strong></p>
+<p style="margin: 0">Over the long term, <strong>Bitcoin</strong> exhibits characteristics similar to <strong>digital gold</strong>, despite its short-term price fluctuations. When you <strong>buy Bitcoin</strong>, you are <strong>placing your trust</strong> in a <strong>mathematical framework</strong> that is <strong>devoid of politics</strong> and <strong>human error</strong>. However, holding Bitcoin for the long term requires a <strong>strong understanding</strong> of the underlying technology, <strong>necessitating</strong> a <strong>deep investment in education</strong>.</p>
+<p style="margin: 0">So why might <strong>Bitcoin</strong> become <strong>the singular foundational protocol for e-money</strong>, instead of one out of many? The short of it is that at the very heart of digital money is <strong>reliability</strong>, which is very <strong>expensive to achieve</strong>, and of which the <strong>per-user-cost</strong> becomes <strong>cheaper</strong> as the monetary protocol <strong>grows in size</strong>.</p>
+<p style="margin: 0">To better <strong>appreciate the potential</strong> of <strong>Bitcoin</strong> and understand its inner workings, it is <strong>crucial to educate oneself</strong> on the subject. As an <strong>expert</strong> in the <strong>field</strong>, I am prepared to <strong>guide you</strong> through the intricacies of Bitcoin and <strong>help you navigate</strong> this exciting new frontier. I encourage you to explore available resources, engage in community discussions, and immerse yourself in this revolutionary technology.</p></div>
+</div>
+</section>
+
+<section id="resources" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x04 // resources</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Free education.</h2>
+<p style="margin: 0; max-width: 560px; color: #9A978E; font-size: 15px">The best Bitcoin knowledge was never behind a paywall. Start here — <span style="color: #ECEAE3">then verify everything.</span></p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<a class="card" href="https://www.lopp.net/" style="flex: 1 1 360px; border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Lopp.net <span style="color: #F7931A">↗</span></div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Jameson Lopp's rabbit hole: hundreds of hand-picked articles, books, podcasts and videos. Bookmark it — <span style="color: #ECEAE3">you'll never run out of orange pills.</span></p>
+<div style="margin-top: 10px; display: flex; flex-direction: column; font-size: 13px">
+<div style="font-size: 12px; color: #6B685F; padding-bottom: 8px">rabbit hole depth</div>
+<div class="lvl"><span class="lvl-n">lvl 0</span><span class="lvl-t">what is bitcoin</span><span aria-hidden="true" class="lvl-b"><span style="width: 12%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 1</span><span class="lvl-t">buying &amp; self-custody</span><span aria-hidden="true" class="lvl-b"><span style="width: 28%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 2</span><span class="lvl-t">run your own node</span><span aria-hidden="true" class="lvl-b"><span style="width: 44%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 3</span><span class="lvl-t">lightning &amp; privacy</span><span aria-hidden="true" class="lvl-b"><span style="width: 62%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 4</span><span class="lvl-t">mining</span><span aria-hidden="true" class="lvl-b"><span style="width: 80%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl ∞</span><span class="lvl-t" style="color: #ECEAE3">cypherpunk</span><span aria-hidden="true" class="lvl-b"><span style="width: 100%; background-color: #F7931A"></span></span></div>
+</div>
+<span style="margin-top: auto; padding-top: 14px; font-size: 13px; color: #F7931A">enter the rabbit hole ↗</span>
+</a>
+<div style="flex: 1 1 360px; border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0 0 6px; color: #9A978E; font-size: 14px">Battle cries short enough to fit on a sign. <span style="color: #ECEAE3">Strong enough to outlast every central bank.</span></p>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #26251F">
+<div class="cry"><span class="cry-n">01</span><span class="cry-t">Vires in Numeris</span><span class="cry-g">strength in numbers</span></div>
+<div class="cry"><span class="cry-n">02</span><span class="cry-t">Don't Trust, <span style="color: #F7931A">Verify</span></span><span class="cry-g">run your own node</span></div>
+<div class="cry"><span class="cry-n">03</span><span class="cry-t">Not Your Keys, Not Your Bitcoin</span><span class="cry-g">custody is ownership</span></div>
+<div class="cry"><span class="cry-n">04</span><span class="cry-t">HODL</span><span class="cry-g">never sell the dip</span></div>
+<div class="cry"><span class="cry-n">05</span><span class="cry-t">Stacking Sats</span><span class="cry-g">buy a little, often</span></div>
+<div class="cry"><span class="cry-n">06</span><span class="cry-t">Be Your Own Bank</span><span class="cry-g">no permission needed</span></div>
+<div class="cry"><span class="cry-n">07</span><span class="cry-t">Number Go Up!</span><span class="cry-g">fixed supply, rising demand</span></div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 13px; color: #9A978E">signal on 𝕏 — 42 accounts</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a class="pill" href="https://x.com/LynAldenContact" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Lyn Alden</a>
+<a class="pill" href="https://x.com/Excellion" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Samson Mow</a>
+<a class="pill" href="https://x.com/Breedlove22" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Robert Breedlove</a>
+<a class="pill" href="https://x.com/adam3us" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Adam Back</a>
+<a class="pill" href="https://x.com/PeterMcCormack" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Peter McCormack</a>
+<a class="pill" href="https://x.com/100trillionUSD" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>PlanB</a>
+<a class="pill" href="https://x.com/jackmallers" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jack Mallers</a>
+<a class="pill" href="https://x.com/saylor" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Michael Saylor</a>
+<a class="pill" href="https://x.com/SenLummis" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Cynthia Lummis</a>
+<a class="pill" href="https://x.com/APompliano" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Anthony Pompliano</a>
+<a class="pill" href="https://x.com/saifedean" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Saifedean Ammous</a>
+<a class="pill" href="https://x.com/lopp" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jameson Lopp</a>
+<a class="pill" href="https://x.com/LawrenceLepard" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Lawrence Lepard</a>
+<a class="pill" href="https://x.com/TuurDemeester" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Tuur Demeester</a>
+<a class="pill" href="https://x.com/willywoo" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Willy Woo</a>
+<a class="pill" href="https://x.com/giacomozucco" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Giacomo Zucco</a>
+<a class="pill" href="https://x.com/BitcoinMagazine" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Bitcoin Magazine</a>
+<a class="pill" href="https://x.com/WhalePanda" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>WhalePanda</a>
+<a class="pill" href="https://x.com/jack" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jack</a>
+<a class="pill" href="https://x.com/JAN3com" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jan3</a>
+<a class="pill" href="https://x.com/TFTC21" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>TFTC</a>
+<a class="pill" href="https://x.com/alistairmilne" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Alistair Milne</a>
+<a class="pill" href="https://x.com/AaronvanW" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Aaron van Wirdum</a>
+<a class="pill" href="https://x.com/slush" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Slush</a>
+<a class="pill" href="https://x.com/CaitlinLong_" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Caitlin Long</a>
+<a class="pill" href="https://x.com/SatoshiLite" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Charlie Lee</a>
+<a class="pill" href="https://x.com/PrestonPysh" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Preston Pysh</a>
+<a class="pill" href="https://x.com/PeterLBrandt" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Peter Brandt</a>
+<a class="pill" href="https://x.com/danheld" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Dan Held</a>
+<a class="pill" href="https://x.com/jimmysong" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jimmy Song</a>
+<a class="pill" href="https://x.com/ToneVays" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Tone Vays</a>
+<a class="pill" href="https://x.com/BitcoinPierre" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Pierre Rochard</a>
+<a class="pill" href="https://x.com/maxkeiser" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Max Keiser</a>
+<a class="pill" href="https://x.com/stacyherbert" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Stacy Herbert</a>
+<a class="pill" href="https://x.com/gaborgurbacs" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Gabor Gurbacs</a>
+<a class="pill" href="https://x.com/aantonop" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Andreas Antonopoulos</a>
+<a class="pill" href="https://x.com/NickSzabo4" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Nick Szabo</a>
+<a class="pill" href="https://x.com/francispouliot_" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Francis Pouliot</a>
+<a class="pill" href="https://x.com/BitcoinErrorLog" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>John Carvalho</a>
+<a class="pill" href="https://x.com/PavolRusnak" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Pavol Rusnák</a>
+<a class="pill" href="https://x.com/BTCPrague" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>BTC Prague</a>
+<a class="pill" href="https://x.com/EricBalchunas" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Eric Balchunas</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bio" style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x05 // background</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">My journey<br><span style="color: #6B685F">before Bitcoin.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; color: #6B685F">executive manager</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">F.A. Hayek Foundation</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Organized Central Europe's first Future of Money conference — <span style="color: #ECEAE3">putting the question of what money becomes next on the main stage.</span></p>
+</div>
+<div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; color: #6B685F">co-founder</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">ViaGold</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">In 2011, built the first online shop where customers paid with gold via the GoldMoney network — <span style="color: #ECEAE3">sound money at checkout, years before it was cool.</span></p>
+</div>
+</div>
+<div style="border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px; background-color: #0B0B0A">
+<div style="font-size: 12px; color: #6B685F">// 2012 — GoldMoney discontinued its payment network due to regulatory pressure. We discovered Bitcoin, and learned a critical lesson:</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em">"Trusted Third Party Payment Networks Are <span style="color: #F7931A">Business Threats</span>."</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 13px; color: #9A978E">decade recap — the chain</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch">
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#0</span><span>prev: genesis</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2011</div>
+<div style="font-size: 13px; color: #ECEAE3">Introduced to Bitcoin</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#1</span><span>prev: 2011</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2012</div>
+<div style="font-size: 13px; color: #ECEAE3">First trading experience</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#2</span><span>prev: 2012</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2013</div>
+<div style="font-size: 13px; color: #ECEAE3">First MtGox experience</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#3</span><span>prev: 2013</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2014–19</div>
+<div style="font-size: 13px; color: #ECEAE3">Trezor &amp; Slush Pool</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#4</span><span>prev: 2014</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2019–26</div>
+<div style="font-size: 13px; color: #ECEAE3">Freelance consultant</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x06 // projects</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Things I'm working on.</h2>
+</div>
+<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 12px; color: #6B685F">translation · in progress</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em">Czech translation of "Broken Money"</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px; max-width: 640px">Lyn Alden's brilliant history of money, told through the lens of technology — with Bitcoin as its next chapter. I'm leading the Czech translation, <span style="color: #ECEAE3">so nobody in my community has to read it in a second language.</span></p>
+</div>
+<a class="ghost" href="mailto:martin@jurco.io?subject=I%20am%20interested%20in%20helping%20out%20with%20The%20Bitcoin%20Standard%20translation" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border: 1px solid #4A4840">interested in collaborating? →</a>
+</article>
+</div>
+</section>
+
+<section id="contact"style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; color: #F7931A">0x07 // contact</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Open a channel.</h2>
+<p style="margin: 0; color: #9A978E; max-width: 420px">Questions about a course or a mining setup? Reach out on whichever protocol you trust most.</p>
+<a class="btn" href="mailto:martin@jurco.io" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">send a message
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; border-top: 1px solid #26251F; font-size: 14px">
+<a class="row" href="mailto:martin@jurco.io" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">email</span><span>martin@jurco.io</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">nostr</span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">[NPUB]</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">x</span><span>[@HANDLE]</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">pgp</span><span>[FINGERPRINT]</span></a>
+<p style="margin: 20px 0 0; color: #9A978E; font-size: 12px">I am not affiliated with, employed by, or receiving funding from any government or government-funded agency. <a href="https://www.nepracujemeprestat.sk/" style="text-decoration: underline">Learn why →</a></p>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: #6B685F">
+<span>© 2026 Martin Jurco · no cookies, no trackers</span>
+<span>vires in numeris<span class="cur" style="color: #F7931A">_</span></span>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var words = ['bitcoin maximalist', 'sovereign individual', 'colonizer of cyberspace', 'educator', 'node operator', 'miner'];
+  var el = document.getElementById('tagline');
+  if (!el) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var idx = 0, glyphs = '01#$%&*<>/\\_{}=+ABCDEF';
+  setInterval(function () {
+    idx = (idx + 1) % words.length;
+    var target = words[idx], frame = 0, frames = 16;
+    var anim = setInterval(function () {
+      frame++;
+      var reveal = Math.floor((frame / frames) * target.length), out = '';
+      for (var k = 0; k < target.length; k++) {
+        out += (k < reveal || target[k] === ' ') ? target[k] : glyphs[Math.floor(Math.random() * glyphs.length)];
+      }
+      el.textContent = out;
+      if (frame >= frames) { clearInterval(anim); el.textContent = target; }
+    }, 45);
+  }, 3200);
+})();
+</script>
+</body>
+</html>
