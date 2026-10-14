@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin Jurco — Bitcoinové kurzy a konzultace</title>
+<meta name="description" content="Martin Jurco — bitcoinové vzdělávání, kurzy pro začátečníky i pokročilé a konzultace k těžbě.">
+<link rel="canonical" href="https://jurco.io/cs.html">
+<link rel="alternate" hreflang="en" href="https://jurco.io/">
+<link rel="alternate" hreflang="cs" href="https://jurco.io/cs.html">
+<link rel="alternate" hreflang="sk" href="https://jurco.io/sk.html">
+<link rel="alternate" hreflang="x-default" href="https://jurco.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Martin Jurco — Bitcoinové kurzy a konzultace">
+<meta property="og:description" content="Martin Jurco — bitcoinové vzdělávání, kurzy pro začátečníky i pokročilé a konzultace k těžbě.">
+<meta property="og:url" content="https://jurco.io/cs.html">
+<meta property="og:image" content="https://jurco.io/martin-portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0B0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7931A'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' font-family='monospace' font-weight='700' fill='%230B0B0A'%3E%E2%82%BF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B0A}
+a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
+::selection{background:#F7931A;color:#0B0B0A}
+.cur{display:inline-block;animation:blink 1.06s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.navlink{color:#9A978E;transition:color .15s}
+.navlink:hover{color:#ECEAE3}
+.navlink:hover .br{opacity:1}
+.br{opacity:0;transition:opacity .15s}
+.lang{color:#6B685F;padding:4px 6px}
+.lang:hover{color:#ECEAE3}
+.card{position:relative;transition:background .2s,border-color .2s,transform .2s}
+.card:hover{background:#151513;border-color:#4A4840;transform:translateY(-3px)}
+.card:hover .hash{color:#ECEAE3}
+.crn{position:absolute;width:10px;height:10px;border-color:#6B685F;border-style:solid}
+.btn{transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 #ECEAE3}
+.ghost{transition:background .15s,color .15s}
+.ghost:hover{background:#ECEAE3 !important;color:#0B0B0A !important;border-color:#ECEAE3 !important}
+.row{transition:background .15s,padding .15s}
+.row:hover{background:#121210;padding-left:12px}
+.pill{transition:background .15s,color .15s,border-color .15s}
+.pill:hover{background:#ECEAE3;color:#0B0B0A;border-color:#ECEAE3}
+.blk{transition:background .2s,transform .2s}
+.blk:hover{background:#151513;transform:translateY(-4px)}
+#bitcoin strong{color:#ECEAE3;font-weight:700}
+.cry{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;padding:12px 0;border-top:1px solid #26251F;transition:padding .15s,background .15s}
+.cry:hover{padding-left:8px;background:#121210}
+.cry-n{font-size:11px;color:#6B685F;width:20px}
+.cry-t{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:500;color:#ECEAE3;flex:1 1 auto}
+.cry-g{font-size:12px;color:#9A978E;margin-left:auto}
+.lvl{display:flex;align-items:center;gap:12px;padding:7px 0;border-top:1px dashed #26251F}
+.lvl-n{width:42px;flex:none;font-size:11px;color:#6B685F}
+.lvl-t{flex:1 1 auto;color:#B5B2A9}
+.lvl-b{display:block;flex:none;width:96px;height:4px;background:#26251F}
+.lvl-b span{display:block;height:4px;transition:filter .2s}
+.card:hover .lvl-b span{filter:brightness(1.25)}
+.portrait img{filter:brightness(.9) contrast(1.05);transition:transform .6s ease,filter .3s}
+.portrait:hover img{transform:scale(1.03);filter:none}
+.dots{background-image:radial-gradient(#22211D 1px,transparent 1px);background-size:24px 24px}
+@media (prefers-reduced-motion: reduce){.cur{animation:none}.card,.btn,.row,.blk{transition:none}}
+</style>
+</head>
+<body>
+<div class="dots" style="min-height: 100vh; background-color: #0B0B0A; color: #ECEAE3; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 15px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #26251F">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; letter-spacing: 0.02em">
+<span style="display: inline-flex; width: 28px; height: 28px; align-items: center; justify-content: center; background-color: #F7931A; color: #0B0B0A; font-size: 14px">₿</span>
+<span>jurco<span style="color: #F7931A">.io</span><span class="cur" style="color: #F7931A">_</span></span>
+</a>
+<nav aria-label="Hlavní navigace" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 13px; text-transform: lowercase">
+<a class="navlink" href="#courses"><span class="br">[</span>kurzy<span class="br">]</span></a>
+<a class="navlink" href="#manifesto"><span class="br">[</span>manifest<span class="br">]</span></a>
+<a class="navlink" href="#resources"><span class="br">[</span>zdroje<span class="br">]</span></a>
+<a class="navlink" href="#bio"><span class="br">[</span>bio<span class="br">]</span></a>
+<a class="navlink" href="#projects"><span class="br">[</span>projekty<span class="br">]</span></a>
+<span style="display: inline-flex; align-items: center; font-size: 12px; text-transform: uppercase; border: 1px solid #26251F">
+<a class="lang" href="./" lang="en">EN</a><a class="lang" href="cs.html" aria-current="page" style="color: #0B0B0A; background-color: #F7931A">CZ</a><a class="lang" href="sk.html" lang="sk">SK</a>
+</span>
+<a class="ghost" href="#contact" style="padding: 8px 14px; border: 1px solid #ECEAE3; color: #ECEAE3; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">napište mi →</a>
+</nav>
+</header>
+
+<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 112px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 13px; color: #9A978E; letter-spacing: 0.08em"><span style="color: #F7931A">$</span> bitcoinové kurzy a konzultace</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 128px); line-height: 0.92; letter-spacing: -0.04em">Martin<br>Jurco<span style="color: #F7931A">.</span></h1>
+<div aria-label="bitcoinový maximalista, suverénní jednotlivec, kolonizátor kyberprostoru, lektor, provozovatel nodu, těžař" style="font-size: clamp(16px, 2vw, 22px); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap">
+<span aria-hidden="true" style="color: #9A978E">&gt;</span>
+<span id="tagline" aria-hidden="true" style="color: #F7931A">bitcoinový maximalista</span><span aria-hidden="true" class="cur" style="color: #ECEAE3">█</span>
+</div>
+<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoinové vzdělávání pro ty, kdo raději ověřují, než důvěřují. Kurzy od získání prvních satů až po pokročilé obchodování a praktické konzultace pro těžaře.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px">
+<a class="btn" href="#courses" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">prozkoumat kurzy
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="ghost" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid #4A4840; color: #ECEAE3">napište mi</a>
+</div>
+</div>
+
+<figure class="portrait" style="flex: 1 1 340px; max-width: 460px; min-width: 0; margin: 0; border: 1px solid #26251F; background-color: #0F0F0D; position: relative">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px; border-color: #F7931A"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0; border-color: #F7931A"></span>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid #26251F; font-size: 12px; color: #9A978E">
+<div aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 9px; height: 9px; border: 1px solid #6B685F"></span><span style="width: 9px; height: 9px; border: 1px solid #6B685F"></span><span style="width: 9px; height: 9px; background-color: #F7931A"></span></div>
+<span>~/jurco — portrait.jpg</span>
+</div>
+<div style="overflow: hidden; aspect-ratio: 4 / 5">
+<img src="martin-portrait.jpg" alt="Martin Jurco" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%">
+</div>
+<figcaption style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border-top: 1px solid #26251F; font-size: 12px; color: #9A978E">
+<span>martin jurco</span><span style="color: #F7931A">ověřený člověk ✓</span>
+</figcaption>
+</figure>
+</section>
+
+<div aria-hidden="true" style="border-top: 1px solid #26251F; border-bottom: 1px solid #26251F; overflow: hidden; white-space: nowrap; font-size: 12px; color: #6B685F; padding: 12px 0; letter-spacing: 0.12em">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; overflow: hidden">VIRES IN NUMERIS · DON'T TRUST, VERIFY · NOT YOUR KEYS, NOT YOUR BITCOIN · HODL · STACKING SATS · BE YOUR OWN BANK · NUMBER GO UP! · VIRES IN NUMERIS · DON'T TRUST, VERIFY</div>
+</div>
+
+<section id="courses" style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x01 // kurzy</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Bitcoinové vzdělávání.<br><span style="color: #6B685F">Od prvních satů po těžbu.</span></h2>
+</div>
+<p style="margin: 0; max-width: 380px; color: #9A978E; font-size: 14px">Žádný hype, žádné altcoiny, žádné zkratky. Vyberte si kurz podle toho, kde právě jste.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #26251F; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_I</span><span>začátečník · ELI5</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Bitcoin od nuly</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Co je Bitcoin, proč na něm záleží a jak ho držet sami, bez správce.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> první peněženka, nastavená za pár minut</div>
+<div><span style="color: #F7931A">+</span> nákup prvních satů bez zbytečných poplatků</div>
+<div><span style="color: #F7931A">+</span> první transakce (snazší, než si myslíte)</div>
+<div><span style="color: #F7931A">+</span> seed fráze: střežte je jako zlato</div>
+<div><span style="color: #F7931A">+</span> stackujte potichu: základy soukromí</div>
+<div><span style="color: #F7931A">+</span> poznejte scam a shitcoin na sto honů</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">39 <span style="font-size: 14px; color: #9A978E">EUR</span></span>
+<a class="ghost" href="mailto:martin@jurco.io?subject=Objedn%C3%A1vka%20kurzu%20ELI5" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #4A4840; font-size: 13px">objednat ELI5 →</a>
+</div>
+</article>
+
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #F7931A; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_II</span><span style="color: #F7931A">pokročilý</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Myslete v <span style="color: #F7931A">₿</span>itcoinu</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Saty už máte. Teď pochopte, proč na nich záleží — <span style="color: #ECEAE3">a jak si zachovat chladnou hlavu, když ji trh ztrácí.</span> Cykly, volatilita a FUD srozumitelně rozebrané.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> proč je bitcoin nová třída aktiv, ne akcie</div>
+<div><span style="color: #F7931A">+</span> číst cenové cykly místo reagování na ně</div>
+<div><span style="color: #F7931A">+</span> zachovat klid, když FUD plní titulky</div>
+<div><span style="color: #F7931A">+</span> najít svou výhodu bez zbytečného obchodování</div>
+<div><span style="color: #F7931A">+</span> DCA a HODL: nudné záměrně</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">299 <span style="font-size: 14px; color: #9A978E">EUR</span></span>
+<a class="btn" href="mailto:martin@jurco.io?subject=Objedn%C3%A1vka%20pokro%C4%8Dil%C3%A9ho%20kurzu" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; background-color: #F7931A; color: #0B0B0A; font-weight: 700; font-size: 13px">objednat pokročilý →</a>
+</div>
+</article>
+
+<article class="card" style="flex: 1 1 320px; min-width: 0; border: 1px solid #26251F; padding: 32px 28px; display: flex; flex-direction: column; gap: 20px">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_III</span><span>konzultace 1:1</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Z wattů <span style="color: #F7931A">saty</span></h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Od jednoho domácího stroje po celou farmu. Hardware, energie a tvrdá čísla — <span style="color: #ECEAE3">abyste věděli, že se to vyplatí, ještě než zapojíte zásuvku.</span></p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
+<div><span style="color: #F7931A">+</span> hardware, který si na sebe vydělá</div>
+<div><span style="color: #F7931A">+</span> levná energie, chladné stroje, spokojení sousedé</div>
+<div><span style="color: #F7931A">+</span> výpočet ziskovosti dřív, než utratíte jediný sat</div>
+</div>
+<div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">49 <span style="font-size: 14px; color: #9A978E">EUR / hodina</span></span>
+<a class="ghost" href="mailto:martin@jurco.io?subject=Rezervace%20konzultace" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #4A4840; font-size: 13px">rezervovat →</a>
+</div>
+</article>
+</div>
+</section>
+
+<section id="manifesto" style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="font-size: 13px; color: #F7931A">0x02 // manifest</div>
+<blockquote style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.04em">Nedůvěřuj.<br><span style="color: #F7931A">Ověřuj.</span></blockquote>
+<div style="display: flex; flex-wrap: wrap; border-top: 1px solid #26251F">
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[01]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Nejdřív vlastní úschova</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Každý kurz končí s vašimi klíči ve vašich rukou, ne na burze.</p>
+</div>
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[02]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Jen Bitcoin</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Žádné tokeny, žádné shitcoinové odbočky. Jeden protokol, pochopený pořádně.</p>
+</div>
+<div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; color: #6B685F">[03]</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Suverenita jako výchozí stav</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Soukromí, nezávislost a nízká časová preference — o to celé jde.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bitcoin" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 24px">
+<div style="font-size: 13px; color: #F7931A">0x03 // proč bitcoin</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(48px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.04em"><span style="color: #F7931A">₿</span>itcoin</h2>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.25; font-weight: 500; max-width: 440px">Peníze s pevně omezeným množstvím. Nic takového tu ještě nebylo.</p>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px; color: #B5B2A9; font-size: 15px; line-height: 1.75; max-width: 680px">
+<p style="margin: 0"><strong>Bitcoin</strong>, často označovaný jako <strong>digitální měna</strong>, je nastupující technologie, která existuje už více než deset let. Není to jen nová forma <strong>PayPalu</strong>; představuje úplně novou formu peněz s <strong>absolutně omezenou nabídkou</strong>, jaká tu nikdy předtím nebyla. Tato <strong>převratná</strong> a <strong>disruptivní inovace</strong> nabízí jedinečné vlastnosti, jako jsou <strong>necenzurovatelné transakce</strong>, <strong>ochrana před konfiskací</strong> a robustní design, díky kterému jde o <strong>ultra tvrdé peníze</strong>, a tedy <strong>ideálního uchovatele hodnoty</strong> pro <strong>21. století</strong>.</p>
+<p style="margin: 0"><strong>Bitcoin</strong> oslovuje ty, kdo hledají <strong>zajištění proti nejhorším ekonomickým scénářům</strong>. <strong>Nabízí ochranu</strong> před <strong>inflací</strong>, <strong>bezpečí</strong> pro případ <strong>krachu bank</strong> a <strong>útočiště</strong> v globálním prostředí nulových či záporných reálných úrokových sazeb. Je však třeba přiznat i <strong>výzvy</strong>, které s Bitcoinem souvisejí, například jeho <strong>krátkodobou volatilitu.</strong></p>
+<p style="margin: 0">Z dlouhodobého hlediska vykazuje <strong>Bitcoin</strong> vlastnosti podobné <strong>digitálnímu zlatu</strong>, navzdory krátkodobým cenovým výkyvům. Když <strong>kupujete Bitcoin</strong>, <strong>vkládáte důvěru</strong> do <strong>matematického rámce</strong>, který je <strong>prostý politiky</strong> i <strong>lidských chyb</strong>. Dlouhodobé držení Bitcoinu však vyžaduje <strong>dobré pochopení</strong> technologie, na které stojí, a <strong>tedy</strong> <strong>hlubokou investici do vzdělání</strong>.</p>
+<p style="margin: 0">Proč by se tedy <strong>Bitcoin</strong> mohl stát <strong>jediným základním protokolem pro elektronické peníze</strong>, a ne jen jedním z mnoha? Ve zkratce: v samém jádru digitálních peněz je <strong>spolehlivost</strong>, jejíž dosažení je <strong>velmi drahé</strong> a jejíž <strong>cena na uživatele</strong> <strong>klesá</strong> s tím, jak monetární protokol <strong>roste</strong>.</p>
+<p style="margin: 0">Abyste plně <strong>docenili potenciál</strong> <strong>Bitcoinu</strong> a pochopili, jak funguje, je <strong>zásadní se v tomto tématu vzdělávat</strong>. Jako <strong>odborník</strong> v <strong>oboru</strong> vás rád <strong>provedu</strong> spletitostmi Bitcoinu a <strong>pomohu vám zorientovat se</strong> v tomto novém a vzrušujícím světě. Doporučuji vám prozkoumat dostupné zdroje, zapojit se do komunitních diskusí a ponořit se do této revoluční technologie.</p></div>
+</div>
+</section>
+
+<section id="resources" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x04 // zdroje</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Vzdělávání zdarma.</h2>
+<p style="margin: 0; max-width: 560px; color: #9A978E; font-size: 15px">To nejlepší o Bitcoinu nikdy nebylo za paywallem. Začněte tady — <span style="color: #ECEAE3">a pak si všechno ověřte.</span></p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<a class="card" href="https://www.lopp.net/" style="flex: 1 1 360px; border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Lopp.net <span style="color: #F7931A">↗</span></div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Králičí nora Jamesona Loppa: stovky ručně vybraných článků, knih, podcastů a videí. Uložte si ji — <span style="color: #ECEAE3">oranžové pilulky vám nikdy nedojdou.</span></p>
+<div style="margin-top: 10px; display: flex; flex-direction: column; font-size: 13px">
+<div style="font-size: 12px; color: #6B685F; padding-bottom: 8px">hloubka králičí nory</div>
+<div class="lvl"><span class="lvl-n">lvl 0</span><span class="lvl-t">co je bitcoin</span><span aria-hidden="true" class="lvl-b"><span style="width: 12%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 1</span><span class="lvl-t">nákup a vlastní úschova</span><span aria-hidden="true" class="lvl-b"><span style="width: 28%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 2</span><span class="lvl-t">vlastní node</span><span aria-hidden="true" class="lvl-b"><span style="width: 44%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 3</span><span class="lvl-t">lightning a soukromí</span><span aria-hidden="true" class="lvl-b"><span style="width: 62%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl 4</span><span class="lvl-t">těžba</span><span aria-hidden="true" class="lvl-b"><span style="width: 80%; background-color: #F7931A"></span></span></div>
+<div class="lvl"><span class="lvl-n">lvl ∞</span><span class="lvl-t" style="color: #ECEAE3">cypherpunk</span><span aria-hidden="true" class="lvl-b"><span style="width: 100%; background-color: #F7931A"></span></span></div>
+</div>
+<span style="margin-top: auto; padding-top: 14px; font-size: 13px; color: #F7931A">vstoupit do králičí nory ↗</span>
+</a>
+<div style="flex: 1 1 360px; border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0 0 6px; color: #9A978E; font-size: 14px">Bojové pokřiky dost krátké, aby se vešly na transparent. <span style="color: #ECEAE3">Dost silné, aby přežily každou centrální banku.</span></p>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #26251F">
+<div class="cry"><span class="cry-n">01</span><span class="cry-t" lang="la">Vires in Numeris</span><span class="cry-g">síla v číslech</span></div>
+<div class="cry"><span class="cry-n">02</span><span class="cry-t" lang="en">Don't Trust, <span style="color: #F7931A">Verify</span></span><span class="cry-g">provozuj vlastní node</span></div>
+<div class="cry"><span class="cry-n">03</span><span class="cry-t" lang="en">Not Your Keys, Not Your Bitcoin</span><span class="cry-g">úschova je vlastnictví</span></div>
+<div class="cry"><span class="cry-n">04</span><span class="cry-t" lang="en">HODL</span><span class="cry-g">neprodávej v propadu</span></div>
+<div class="cry"><span class="cry-n">05</span><span class="cry-t" lang="en">Stacking Sats</span><span class="cry-g">kupuj málo, ale často</span></div>
+<div class="cry"><span class="cry-n">06</span><span class="cry-t" lang="en">Be Your Own Bank</span><span class="cry-g">bez povolení</span></div>
+<div class="cry"><span class="cry-n">07</span><span class="cry-t" lang="en">Number Go Up!</span><span class="cry-g">pevná nabídka, rostoucí poptávka</span></div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 13px; color: #9A978E">signál na 𝕏 — 42 účtů</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a class="pill" href="https://x.com/LynAldenContact" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Lyn Alden</a>
+<a class="pill" href="https://x.com/Excellion" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Samson Mow</a>
+<a class="pill" href="https://x.com/Breedlove22" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Robert Breedlove</a>
+<a class="pill" href="https://x.com/adam3us" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Adam Back</a>
+<a class="pill" href="https://x.com/PeterMcCormack" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Peter McCormack</a>
+<a class="pill" href="https://x.com/100trillionUSD" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>PlanB</a>
+<a class="pill" href="https://x.com/jackmallers" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jack Mallers</a>
+<a class="pill" href="https://x.com/saylor" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Michael Saylor</a>
+<a class="pill" href="https://x.com/SenLummis" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Cynthia Lummis</a>
+<a class="pill" href="https://x.com/APompliano" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Anthony Pompliano</a>
+<a class="pill" href="https://x.com/saifedean" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Saifedean Ammous</a>
+<a class="pill" href="https://x.com/lopp" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jameson Lopp</a>
+<a class="pill" href="https://x.com/LawrenceLepard" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Lawrence Lepard</a>
+<a class="pill" href="https://x.com/TuurDemeester" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Tuur Demeester</a>
+<a class="pill" href="https://x.com/willywoo" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Willy Woo</a>
+<a class="pill" href="https://x.com/giacomozucco" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Giacomo Zucco</a>
+<a class="pill" href="https://x.com/BitcoinMagazine" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Bitcoin Magazine</a>
+<a class="pill" href="https://x.com/WhalePanda" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>WhalePanda</a>
+<a class="pill" href="https://x.com/jack" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jack</a>
+<a class="pill" href="https://x.com/JAN3com" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jan3</a>
+<a class="pill" href="https://x.com/TFTC21" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>TFTC</a>
+<a class="pill" href="https://x.com/alistairmilne" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Alistair Milne</a>
+<a class="pill" href="https://x.com/AaronvanW" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Aaron van Wirdum</a>
+<a class="pill" href="https://x.com/slush" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Slush</a>
+<a class="pill" href="https://x.com/CaitlinLong_" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Caitlin Long</a>
+<a class="pill" href="https://x.com/SatoshiLite" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Charlie Lee</a>
+<a class="pill" href="https://x.com/PrestonPysh" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Preston Pysh</a>
+<a class="pill" href="https://x.com/PeterLBrandt" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Peter Brandt</a>
+<a class="pill" href="https://x.com/danheld" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Dan Held</a>
+<a class="pill" href="https://x.com/jimmysong" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Jimmy Song</a>
+<a class="pill" href="https://x.com/ToneVays" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Tone Vays</a>
+<a class="pill" href="https://x.com/BitcoinPierre" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Pierre Rochard</a>
+<a class="pill" href="https://x.com/maxkeiser" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Max Keiser</a>
+<a class="pill" href="https://x.com/stacyherbert" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Stacy Herbert</a>
+<a class="pill" href="https://x.com/gaborgurbacs" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Gabor Gurbacs</a>
+<a class="pill" href="https://x.com/aantonop" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Andreas Antonopoulos</a>
+<a class="pill" href="https://x.com/NickSzabo4" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Nick Szabo</a>
+<a class="pill" href="https://x.com/francispouliot_" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Francis Pouliot</a>
+<a class="pill" href="https://x.com/BitcoinErrorLog" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>John Carvalho</a>
+<a class="pill" href="https://x.com/PavolRusnak" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Pavol Rusnák</a>
+<a class="pill" href="https://x.com/BTCPrague" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>BTC Prague</a>
+<a class="pill" href="https://x.com/EricBalchunas" style="border: 1px solid #26251F; padding: 8px 12px; font-size: 13px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px"><span style="color: #6B685F">@</span>Eric Balchunas</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bio" style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x05 // zázemí</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Moje cesta<br><span style="color: #6B685F">před Bitcoinem.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; color: #6B685F">výkonný manažer</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Nadácia F. A. Hayeka</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Zorganizoval první konferenci Future of Money ve střední Evropě — <span style="color: #ECEAE3">a postavil otázku, čím se peníze stanou, na hlavní pódium.</span></p>
+</div>
+<div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; color: #6B685F">spoluzakladatel</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">ViaGold</div>
+<p style="margin: 0; color: #9A978E; font-size: 14px">V roce 2011 postavil první e-shop, kde zákazníci platili zlatem přes síť GoldMoney — <span style="color: #ECEAE3">zdravé peníze u pokladny, dávno předtím, než to bylo cool.</span></p>
+</div>
+</div>
+<div style="border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px; background-color: #0B0B0A">
+<div style="font-size: 12px; color: #6B685F">// 2012 — GoldMoney kvůli regulatornímu tlaku ukončil svou platební síť. Objevili jsme Bitcoin a naučili se zásadní lekci:</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em">„Platební sítě s důvěryhodnou třetí stranou jsou <span style="color: #F7931A">hrozbou pro byznys</span>.“</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 13px; color: #9A978E">desetiletí v kostce — řetězec</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch">
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#0</span><span>prev: genesis</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2011</div>
+<div style="font-size: 13px; color: #ECEAE3">Seznámení s Bitcoinem</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#1</span><span>prev: 2011</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2012</div>
+<div style="font-size: 13px; color: #ECEAE3">První obchodní zkušenost</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#2</span><span>prev: 2012</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2013</div>
+<div style="font-size: 13px; color: #ECEAE3">První zkušenost s MtGox</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#3</span><span>prev: 2013</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2014–19</div>
+<div style="font-size: 13px; color: #ECEAE3">Trezor &amp; Slush Pool</div>
+</div>
+<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#4</span><span>prev: 2014</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2019–26</div>
+<div style="font-size: 13px; color: #ECEAE3">Nezávislý konzultant</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; color: #F7931A">0x06 // projekty</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Na čem pracuji.</h2>
+</div>
+<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between">
+<span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 12px; color: #6B685F">překlad · probíhá</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em">Český překlad knihy „Broken Money“</h3>
+<p style="margin: 0; color: #9A978E; font-size: 14px; max-width: 640px">Brilantní historie peněz od Lyn Alden, vyprávěná optikou technologií — s Bitcoinem jako další kapitolou. Vedu český překlad, <span style="color: #ECEAE3">aby ji nikdo z mé komunity nemusel číst v cizím jazyce.</span></p>
+</div>
+<a class="ghost" href="mailto:martin@jurco.io?subject=I%20am%20interested%20in%20helping%20out%20with%20The%20Bitcoin%20Standard%20translation" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border: 1px solid #4A4840">chcete spolupracovat? →</a>
+</article>
+</div>
+</section>
+
+<section id="contact"style="border-top: 1px solid #26251F; background-color: #0F0F0D">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; color: #F7931A">0x07 // kontakt</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Ozvěte se.</h2>
+<p style="margin: 0; color: #9A978E; max-width: 420px">Máte dotaz ke kurzu nebo k těžbě? Ozvěte se přes protokol, kterému věříte nejvíc.</p>
+<a class="btn" href="mailto:martin@jurco.io" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">poslat zprávu
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; border-top: 1px solid #26251F; font-size: 14px">
+<a class="row" href="mailto:martin@jurco.io" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">e-mail</span><span>martin@jurco.io</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">nostr</span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">[NPUB]</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">x</span><span>[@HANDLE]</span></a>
+<a class="row" href="#contact" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #26251F; min-height: 44px; box-sizing: border-box"><span style="color: #6B685F">pgp</span><span>[FINGERPRINT]</span></a>
+<p style="margin: 20px 0 0; color: #9A978E; font-size: 12px">Nejsem spojen s žádnou vládou ani vládou financovanou agenturou, nejsem jimi zaměstnán a nepobírám od nich žádné peníze. <a href="https://www.nepracujemeprestat.sk/" style="text-decoration: underline">Proč →</a></p>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #26251F">
+<div style="max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: #6B685F">
+<span>© 2026 Martin Jurco · žádné cookies, žádné trackery</span>
+<span>vires in numeris<span class="cur" style="color: #F7931A">_</span></span>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var words = ['bitcoinový maximalista', 'suverénní jednotlivec', 'kolonizátor kyberprostoru', 'lektor', 'provozovatel nodu', 'těžař'];
+  var el = document.getElementById('tagline');
+  if (!el) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var idx = 0, glyphs = '01#$%&*<>/\\_{}=+ABCDEF';
+  setInterval(function () {
+    idx = (idx + 1) % words.length;
+    var target = words[idx], frame = 0, frames = 16;
+    var anim = setInterval(function () {
+      frame++;
+      var reveal = Math.floor((frame / frames) * target.length), out = '';
+      for (var k = 0; k < target.length; k++) {
+        out += (k < reveal || target[k] === ' ') ? target[k] : glyphs[Math.floor(Math.random() * glyphs.length)];
+      }
+      el.textContent = out;
+      if (frame >= frames) { clearInterval(anim); el.textContent = target; }
+    }, 45);
+  }, 3200);
+})();
+</script>
+</body>
+</html>
