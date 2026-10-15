@@ -60,6 +60,8 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 .card:hover .lvl-b span{filter:brightness(1.25)}
 .portrait img{filter:brightness(.9) contrast(1.05);transition:transform .6s ease,filter .3s}
 .portrait:hover img{transform:scale(1.03);filter:none}
+.book{box-shadow:10px 10px 0 #1A1916;transition:transform .3s ease,box-shadow .3s ease}
+.card:hover .book{transform:rotate(-2deg) translateY(-4px);box-shadow:14px 14px 0 #F7931A33}
 .dots{background-image:radial-gradient(#22211D 1px,transparent 1px);background-size:24px 24px}
 @media (prefers-reduced-motion: reduce){.cur{animation:none}.card,.btn,.row,.blk{transition:none}}
 </style>
@@ -93,7 +95,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <span aria-hidden="true" style="color: #9A978E">&gt;</span>
 <span id="tagline" aria-hidden="true" style="color: #F7931A">bitcoinový maximalista</span><span aria-hidden="true" class="cur" style="color: #ECEAE3">█</span>
 </div>
-<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoinové vzdělávání pro ty, kdo raději ověřují, než důvěřují. Kurzy od získání prvních satů až po pokročilé obchodování a praktické konzultace pro těžaře.</p>
+<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoinové vzdělávání pro ty, kdo raději ověřují, než důvěřují. Od Vašeho úplně prvního ₿itcoinu až po pokročilé obchodování — a k tomu praktické konzultace pro těžaře.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px">
 <a class="btn" href="#courses" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">prozkoumat kurzy
 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
@@ -111,7 +113,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <img src="martin-portrait.jpg" alt="Martin Jurco" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%">
 </div>
 <figcaption style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border-top: 1px solid #26251F; font-size: 12px; color: #9A978E">
-<span>martin jurco</span><span style="color: #F7931A">ověřený člověk ✓</span>
+<span>martin jurco</span><span style="color: #F7931A">number go up</span>
 </figcaption>
 </figure>
 </section>
@@ -126,7 +128,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="font-size: 13px; color: #F7931A">0x01 // kurzy</div>
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Bitcoinové vzdělávání.<br><span style="color: #6B685F">Od prvních satů po těžbu.</span></h2>
 </div>
-<p style="margin: 0; max-width: 380px; color: #9A978E; font-size: 14px">Žádný hype, žádné altcoiny, žádné zkratky. Vyberte si kurz podle toho, kde právě jste.</p>
+<p style="margin: 0; max-width: 380px; color: #9A978E; font-size: 14px">Žádný hype, žádné altcoiny, žádné zkratky. Vyberte si kurz podle toho, kolik toho už umíte.</p>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
@@ -134,7 +136,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
 <div style="display: flex; justify-content: space-between; font-size: 12px; color: #6B685F"><span class="hash">blk_I</span><span>začátečník · ELI5</span></div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em">Bitcoin od nuly</h3>
-<p style="margin: 0; color: #9A978E; font-size: 14px">Co je Bitcoin, proč na něm záleží a jak ho držet sami, bez správce.</p>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Co je Bitcoin, proč na něm záleží a jak si ho bezpečně uschovat, bez správce.</p>
 <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
 <div><span style="color: #F7931A">+</span> první peněženka, nastavená za pár minut</div>
 <div><span style="color: #F7931A">+</span> nákup prvních satů bez zbytečných poplatků</div>
@@ -156,10 +158,10 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <p style="margin: 0; color: #9A978E; font-size: 14px">Saty už máte. Teď pochopte, proč na nich záleží — <span style="color: #ECEAE3">a jak si zachovat chladnou hlavu, když ji trh ztrácí.</span> Cykly, volatilita a FUD srozumitelně rozebrané.</p>
 <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #B5B2A9">
 <div><span style="color: #F7931A">+</span> proč je bitcoin nová třída aktiv, ne akcie</div>
-<div><span style="color: #F7931A">+</span> číst cenové cykly místo reagování na ně</div>
+<div><span style="color: #F7931A">+</span> jak číst cenové cykly místo reagování na ně</div>
 <div><span style="color: #F7931A">+</span> zachovat klid, když FUD plní titulky</div>
 <div><span style="color: #F7931A">+</span> najít svou výhodu bez zbytečného obchodování</div>
-<div><span style="color: #F7931A">+</span> DCA a HODL: nudné záměrně</div>
+<div><span style="color: #F7931A">+</span> DCA a HODL: nudné je to záměrně</div>
 </div>
 <div style="margin-top: auto; padding-top: 20px; border-top: 1px dashed #26251F; display: flex; justify-content: space-between; align-items: center; gap: 12px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">299 <span style="font-size: 14px; color: #9A978E">EUR</span></span>
@@ -193,12 +195,12 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
 <div style="font-size: 12px; color: #6B685F">[01]</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Nejdřív vlastní úschova</div>
-<p style="margin: 0; color: #9A978E; font-size: 14px">Každý kurz končí s vašimi klíči ve vašich rukou, ne na burze.</p>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Každý kurz končí s vašimi bitcoinovými klíči ve vašich rukou, ne na burze.</p>
 </div>
 <div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
 <div style="font-size: 12px; color: #6B685F">[02]</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Jen Bitcoin</div>
-<p style="margin: 0; color: #9A978E; font-size: 14px">Žádné tokeny, žádné shitcoinové odbočky. Jeden protokol, pochopený pořádně.</p>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Žádné tokeny, žádné shitcoinové odbočky. Jeden protokol, vysvětlený a pochopený pořádně.</p>
 </div>
 <div style="flex: 1 1 260px; padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px">
 <div style="font-size: 12px; color: #6B685F">[03]</div>
@@ -217,11 +219,11 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.25; font-weight: 500; max-width: 440px">Peníze s pevně omezeným množstvím. Nic takového tu ještě nebylo.</p>
 </div>
 <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px; color: #B5B2A9; font-size: 15px; line-height: 1.75; max-width: 680px">
-<p style="margin: 0"><strong>Bitcoin</strong>, často označovaný jako <strong>digitální měna</strong>, je nastupující technologie, která existuje už více než deset let. Není to jen nová forma <strong>PayPalu</strong>; představuje úplně novou formu peněz s <strong>absolutně omezenou nabídkou</strong>, jaká tu nikdy předtím nebyla. Tato <strong>převratná</strong> a <strong>disruptivní inovace</strong> nabízí jedinečné vlastnosti, jako jsou <strong>necenzurovatelné transakce</strong>, <strong>ochrana před konfiskací</strong> a robustní design, díky kterému jde o <strong>ultra tvrdé peníze</strong>, a tedy <strong>ideálního uchovatele hodnoty</strong> pro <strong>21. století</strong>.</p>
+<p style="margin: 0"><strong>Bitcoin</strong>, často označovaný jako <strong>digitální kryptoměna</strong>, je nastupující technologie, která existuje už více než 15 let. Není to jen nová forma <strong>PayPalu</strong>; představuje úplně novou formu peněz s <strong>pevně omezenou nabídkou</strong>, jaká tu nikdy předtím nebyla. Tato <strong>převratná</strong> a <strong>disruptivní inovace</strong> nabízí jedinečné vlastnosti, jako jsou <strong>necenzurovatelné transakce</strong>, <strong>ochrana před konfiskací</strong> a robustní design, díky kterému jde o <strong>ultra tvrdé peníze</strong>, a tedy <strong>ideálního uchovatele hodnoty</strong> pro <strong>21. století</strong>.</p>
 <p style="margin: 0"><strong>Bitcoin</strong> oslovuje ty, kdo hledají <strong>zajištění proti nejhorším ekonomickým scénářům</strong>. <strong>Nabízí ochranu</strong> před <strong>inflací</strong>, <strong>bezpečí</strong> pro případ <strong>krachu bank</strong> a <strong>útočiště</strong> v globálním prostředí nulových či záporných reálných úrokových sazeb. Je však třeba přiznat i <strong>výzvy</strong>, které s Bitcoinem souvisejí, například jeho <strong>krátkodobou volatilitu.</strong></p>
 <p style="margin: 0">Z dlouhodobého hlediska vykazuje <strong>Bitcoin</strong> vlastnosti podobné <strong>digitálnímu zlatu</strong>, navzdory krátkodobým cenovým výkyvům. Když <strong>kupujete Bitcoin</strong>, <strong>vkládáte důvěru</strong> do <strong>matematického rámce</strong>, který je <strong>prostý politiky</strong> i <strong>lidských chyb</strong>. Dlouhodobé držení Bitcoinu však vyžaduje <strong>dobré pochopení</strong> technologie, na které stojí, a <strong>tedy</strong> <strong>hlubokou investici do vzdělání</strong>.</p>
 <p style="margin: 0">Proč by se tedy <strong>Bitcoin</strong> mohl stát <strong>jediným základním protokolem pro elektronické peníze</strong>, a ne jen jedním z mnoha? Ve zkratce: v samém jádru digitálních peněz je <strong>spolehlivost</strong>, jejíž dosažení je <strong>velmi drahé</strong> a jejíž <strong>cena na uživatele</strong> <strong>klesá</strong> s tím, jak monetární protokol <strong>roste</strong>.</p>
-<p style="margin: 0">Abyste plně <strong>docenili potenciál</strong> <strong>Bitcoinu</strong> a pochopili, jak funguje, je <strong>zásadní se v tomto tématu vzdělávat</strong>. Jako <strong>odborník</strong> v <strong>oboru</strong> vás rád <strong>provedu</strong> spletitostmi Bitcoinu a <strong>pomohu vám zorientovat se</strong> v tomto novém a vzrušujícím světě. Doporučuji vám prozkoumat dostupné zdroje, zapojit se do komunitních diskusí a ponořit se do této revoluční technologie.</p></div>
+<p style="margin: 0">Abyste plně <strong>docenili potenciál</strong> <strong>Bitcoinu</strong> a pochopili, jak funguje, je <strong>zásadní se v tomto tématu vzdělávat</strong>. Jako <strong>odborník</strong> v <strong>oboru</strong> vás rád <strong>provedu</strong> spletitostmi Bitcoinu a <strong>pomohu vám zorientovat se</strong> v tomto novém a vzrušujícím světě. Doporučuji vám prozkoumat dostupné zdroje uvedené níže,zapojit se do komunitních diskusí a ponořit se do této revoluční technologie.</p></div>
 </div>
 </section>
 
@@ -230,7 +232,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="display: flex; flex-direction: column; gap: 14px">
 <div style="font-size: 13px; color: #F7931A">0x04 // zdroje</div>
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Vzdělávání zdarma.</h2>
-<p style="margin: 0; max-width: 560px; color: #9A978E; font-size: 15px">To nejlepší o Bitcoinu nikdy nebylo za paywallem. Začněte tady — <span style="color: #ECEAE3">a pak si všechno ověřte.</span></p>
+<p style="margin: 0; max-width: 560px; color: #9A978E; font-size: 15px">To nejlepší o Bitcoinu nikdy nebylo za paywallem. Začněte kurzem u mě — <span style="color: #ECEAE3">a pak si všechno ověřte ve volně dostupných zdrojích níže.</span></p>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
 <a class="card" href="https://www.lopp.net/" style="flex: 1 1 360px; border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px">
@@ -255,7 +257,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div class="cry"><span class="cry-n">03</span><span class="cry-t" lang="en">Not Your Keys, Not Your Bitcoin</span><span class="cry-g">úschova je vlastnictví</span></div>
 <div class="cry"><span class="cry-n">04</span><span class="cry-t" lang="en">HODL</span><span class="cry-g">neprodávej v propadu</span></div>
 <div class="cry"><span class="cry-n">05</span><span class="cry-t" lang="en">Stacking Sats</span><span class="cry-g">kupuj málo, ale často</span></div>
-<div class="cry"><span class="cry-n">06</span><span class="cry-t" lang="en">Be Your Own Bank</span><span class="cry-g">bez povolení</span></div>
+<div class="cry"><span class="cry-n">06</span><span class="cry-t" lang="en">Be Your Own Bank</span><span class="cry-g">obchoduj bez povolení</span></div>
 <div class="cry"><span class="cry-n">07</span><span class="cry-t" lang="en">Number Go Up!</span><span class="cry-g">pevná nabídka, rostoucí poptávka</span></div>
 </div>
 </div>
@@ -320,49 +322,18 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 12px; color: #6B685F">výkonný manažer</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">Nadácia F. A. Hayeka</div>
-<p style="margin: 0; color: #9A978E; font-size: 14px">Zorganizoval první konferenci Future of Money ve střední Evropě — <span style="color: #ECEAE3">a postavil otázku, čím se peníze stanou, na hlavní pódium.</span></p>
+<p style="margin: 0; color: #9A978E; font-size: 14px">Zorganizoval jsem první konferenci Future of Money ve střední Evropě — <span style="color: #ECEAE3">a nastolil tak otázku, čím se peníze stanou.</span></p>
 </div>
 <div style="flex: 1 1 340px; border-top: 1px solid #4A4840; padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 12px; color: #6B685F">spoluzakladatel</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 500">ViaGold</div>
-<p style="margin: 0; color: #9A978E; font-size: 14px">V roce 2011 postavil první e-shop, kde zákazníci platili zlatem přes síť GoldMoney — <span style="color: #ECEAE3">zdravé peníze u pokladny, dávno předtím, než to bylo cool.</span></p>
+<p style="margin: 0; color: #9A978E; font-size: 14px">V roce 2011 jsem postavil první e-shop, kde zákazníci platili zlatem přes síť GoldMoney — <span style="color: #ECEAE3">zdravé peníze u pokladny, dávno předtím, než to bylo cool.</span></p>
 </div>
 </div>
 <div style="border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px; background-color: #0B0B0A">
 <div style="font-size: 12px; color: #6B685F">// 2012 — GoldMoney kvůli regulatornímu tlaku ukončil svou platební síť. Objevili jsme Bitcoin a naučili se zásadní lekci:</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em">„Platební sítě s důvěryhodnou třetí stranou jsou <span style="color: #F7931A">hrozbou pro byznys</span>.“</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 16px">
-<div style="font-size: 13px; color: #9A978E">desetiletí v kostce — řetězec</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch">
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#0</span><span>prev: genesis</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2011</div>
-<div style="font-size: 13px; color: #ECEAE3">Seznámení s Bitcoinem</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#1</span><span>prev: 2011</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2012</div>
-<div style="font-size: 13px; color: #ECEAE3">První obchodní zkušenost</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#2</span><span>prev: 2012</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2013</div>
-<div style="font-size: 13px; color: #ECEAE3">První zkušenost s MtGox</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#3</span><span>prev: 2013</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2014–19</div>
-<div style="font-size: 13px; color: #ECEAE3">Trezor &amp; Slush Pool</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#4</span><span>prev: 2014</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2019–26</div>
-<div style="font-size: 13px; color: #ECEAE3">Nezávislý konzultant</div>
-</div>
-</div>
-</div>
-</div>
+</div></div>
 </section>
 
 <section id="projects" style="border-top: 1px solid #26251F">
@@ -371,8 +342,10 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="font-size: 13px; color: #F7931A">0x06 // projekty</div>
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Na čem pracuji.</h2>
 </div>
-<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between">
+<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
 <span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<img class="book" src="broken-money-cover.jpg" alt="Obálka knihy Broken Money od Lyn Alden" style="display: block; flex: none; width: 150px; height: auto; border: 1px solid #26251F">
+
 <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <div style="font-size: 12px; color: #6B685F">překlad · probíhá</div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em">Český překlad knihy „Broken Money“</h3>

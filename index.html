@@ -60,6 +60,8 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 .card:hover .lvl-b span{filter:brightness(1.25)}
 .portrait img{filter:brightness(.9) contrast(1.05);transition:transform .6s ease,filter .3s}
 .portrait:hover img{transform:scale(1.03);filter:none}
+.book{box-shadow:10px 10px 0 #1A1916;transition:transform .3s ease,box-shadow .3s ease}
+.card:hover .book{transform:rotate(-2deg) translateY(-4px);box-shadow:14px 14px 0 #F7931A33}
 .dots{background-image:radial-gradient(#22211D 1px,transparent 1px);background-size:24px 24px}
 @media (prefers-reduced-motion: reduce){.cur{animation:none}.card,.btn,.row,.blk{transition:none}}
 </style>
@@ -93,7 +95,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <span aria-hidden="true" style="color: #9A978E">&gt;</span>
 <span id="tagline" aria-hidden="true" style="color: #F7931A">bitcoin maximalist</span><span aria-hidden="true" class="cur" style="color: #ECEAE3">█</span>
 </div>
-<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoin education for people who'd rather verify than trust. Courses from acquiring your first sats to advanced trading, and hands-on consultations for miners.</p>
+<p style="margin: 0; max-width: 560px; color: #B5B2A9; font-size: 16px; line-height: 1.7">Bitcoin education for people who'd rather verify than trust. From your very first ₿itcoin to advanced trading — plus hands-on consultations for miners.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px">
 <a class="btn" href="#courses" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background-color: #F7931A; color: #0B0B0A; font-weight: 700">explore courses
 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
@@ -111,7 +113,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <img src="martin-portrait.jpg" alt="Martin Jurco" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%">
 </div>
 <figcaption style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border-top: 1px solid #26251F; font-size: 12px; color: #9A978E">
-<span>martin jurco</span><span style="color: #F7931A">proof of human ✓</span>
+<span>martin jurco</span><span style="color: #F7931A">number go up</span>
 </figcaption>
 </figure>
 </section>
@@ -217,7 +219,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.25; font-weight: 500; max-width: 440px">A fundamentally new kind of absolutely scarce money that has never existed before.</p>
 </div>
 <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px; color: #B5B2A9; font-size: 15px; line-height: 1.75; max-width: 680px">
-<p style="margin: 0"><strong>Bitcoin</strong>, often referred to as a <strong>digital currency</strong>, is an emerging technology that has been in existence for over a decade. It is not simply a new form of <strong>PayPal</strong>; rather, it represents a fundamentally new kind of <strong>absolutely scarce money</strong> that has never existed before. This <strong>groundbreaking</strong> and <strong>disruptive innovation</strong> offers unique features, such as <strong>uncensorable transactions</strong>, <strong>protection from confiscation</strong>, and a robust design that makes it <strong>ultra-hard type of money</strong> and therefore an <strong>ideal store of value</strong> for the <strong>21st century</strong>.</p>
+<p style="margin: 0"><strong>Bitcoin</strong>, often referred to as a <strong>digital currency</strong>, is an emerging technology that has been in existence for more than 15 years. It is not simply a new form of <strong>PayPal</strong>; rather, it represents a fundamentally new kind of <strong>absolutely scarce money</strong> that has never existed before. This <strong>groundbreaking</strong> and <strong>disruptive innovation</strong> offers unique features, such as <strong>uncensorable transactions</strong>, <strong>protection from confiscation</strong>, and a robust design that makes it <strong>ultra-hard type of money</strong> and therefore an <strong>ideal store of value</strong> for the <strong>21st century</strong>.</p>
 <p style="margin: 0"><strong>Bitcoin</strong> appeals to those seeking a <strong>hedge against worst-case economic scenarios</strong>. It <strong>offers protection</strong> against <strong>inflation</strong>, <strong>security</strong> in the face of potential <strong>bank failures</strong>, and a <strong>safe haven</strong> amidst the global environment of zero or negative real interest rates. However, it is important to acknowledge the <strong>challenge</strong> associated with Bitcoin, such as its <strong>short-term volatility.</strong></p>
 <p style="margin: 0">Over the long term, <strong>Bitcoin</strong> exhibits characteristics similar to <strong>digital gold</strong>, despite its short-term price fluctuations. When you <strong>buy Bitcoin</strong>, you are <strong>placing your trust</strong> in a <strong>mathematical framework</strong> that is <strong>devoid of politics</strong> and <strong>human error</strong>. However, holding Bitcoin for the long term requires a <strong>strong understanding</strong> of the underlying technology, <strong>necessitating</strong> a <strong>deep investment in education</strong>.</p>
 <p style="margin: 0">So why might <strong>Bitcoin</strong> become <strong>the singular foundational protocol for e-money</strong>, instead of one out of many? The short of it is that at the very heart of digital money is <strong>reliability</strong>, which is very <strong>expensive to achieve</strong>, and of which the <strong>per-user-cost</strong> becomes <strong>cheaper</strong> as the monetary protocol <strong>grows in size</strong>.</p>
@@ -331,38 +333,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="border: 1px solid #26251F; padding: 28px; display: flex; flex-direction: column; gap: 10px; background-color: #0B0B0A">
 <div style="font-size: 12px; color: #6B685F">// 2012 — GoldMoney discontinued its payment network due to regulatory pressure. We discovered Bitcoin, and learned a critical lesson:</div>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(22px, 3vw, 34px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em">"Trusted Third Party Payment Networks Are <span style="color: #F7931A">Business Threats</span>."</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 16px">
-<div style="font-size: 13px; color: #9A978E">decade recap — the chain</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch">
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#0</span><span>prev: genesis</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2011</div>
-<div style="font-size: 13px; color: #ECEAE3">Introduced to Bitcoin</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#1</span><span>prev: 2011</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2012</div>
-<div style="font-size: 13px; color: #ECEAE3">First trading experience</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#2</span><span>prev: 2012</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2013</div>
-<div style="font-size: 13px; color: #ECEAE3">First MtGox experience</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#3</span><span>prev: 2013</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2014–19</div>
-<div style="font-size: 13px; color: #ECEAE3">Trezor &amp; Slush Pool</div>
-</div>
-<div class="blk" style="flex: 1 1 180px; border: 1px solid #26251F; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #6B685F"><span>#4</span><span>prev: 2014</span></div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #F7931A">2019–26</div>
-<div style="font-size: 13px; color: #ECEAE3">Freelance consultant</div>
-</div>
-</div>
-</div>
-</div>
+</div></div>
 </section>
 
 <section id="projects" style="border-top: 1px solid #26251F">
@@ -371,8 +342,10 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <div style="font-size: 13px; color: #F7931A">0x06 // projects</div>
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -0.03em; font-weight: 700">Things I'm working on.</h2>
 </div>
-<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between">
+<article class="card" style="border: 1px solid #26251F; padding: 36px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
 <span class="crn" style="top: -1px; left: -1px; border-width: 1px 0 0 1px"></span><span class="crn" style="bottom: -1px; right: -1px; border-width: 0 1px 1px 0"></span>
+<img class="book" src="broken-money-cover.jpg" alt="Broken Money by Lyn Alden — book cover" style="display: block; flex: none; width: 150px; height: auto; border: 1px solid #26251F">
+
 <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <div style="font-size: 12px; color: #6B685F">translation · in progress</div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em">Czech translation of "Broken Money"</h3>
