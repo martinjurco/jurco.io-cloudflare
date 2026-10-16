@@ -62,6 +62,7 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 .portrait:hover img{transform:scale(1.03);filter:none}
 .book{box-shadow:10px 10px 0 #1A1916;transition:transform .3s ease,box-shadow .3s ease}
 .card:hover .book{transform:rotate(-2deg) translateY(-4px);box-shadow:14px 14px 0 #F7931A33}
+@media (max-width:760px){header nav{width:100%;min-width:0;flex-direction:column;align-items:stretch !important;gap:12px !important;font-size:12px !important}.navlinks{min-width:0;max-width:100%;flex-wrap:nowrap !important;justify-content:space-between;gap:12px !important;overflow-x:auto;scrollbar-width:none;white-space:nowrap}.navlinks .br{display:none}.navlinks::-webkit-scrollbar{display:none}.navtools{justify-content:space-between}}
 .dots{background-image:radial-gradient(#22211D 1px,transparent 1px);background-size:24px 24px}
 @media (prefers-reduced-motion: reduce){.cur{animation:none}.card,.btn,.row,.blk{transition:none}}
 </style>
@@ -75,19 +76,23 @@ a{color:#ECEAE3;text-decoration:none}a:hover{color:#FFFFFF}
 <span>jurco<span style="color: #F7931A">.io</span><span class="cur" style="color: #F7931A">_</span></span>
 </a>
 <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 13px; text-transform: lowercase">
+<div class="navlinks" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px">
 <a class="navlink" href="#courses"><span class="br">[</span>courses<span class="br">]</span></a>
 <a class="navlink" href="#manifesto"><span class="br">[</span>manifesto<span class="br">]</span></a>
 <a class="navlink" href="#resources"><span class="br">[</span>resources<span class="br">]</span></a>
 <a class="navlink" href="#bio"><span class="br">[</span>bio<span class="br">]</span></a>
 <a class="navlink" href="#projects"><span class="br">[</span>projects<span class="br">]</span></a>
+</div>
+<div class="navtools" style="display: flex; align-items: center; gap: 22px">
 <span style="display: inline-flex; align-items: center; font-size: 12px; text-transform: uppercase; border: 1px solid #26251F">
 <a class="lang" href="./" aria-current="page" style="color: #0B0B0A; background-color: #F7931A">EN</a><a class="lang" href="cs.html" lang="cs">CZ</a><a class="lang" href="sk.html" lang="sk">SK</a>
 </span>
 <a class="ghost" href="#contact" style="padding: 8px 14px; border: 1px solid #ECEAE3; color: #ECEAE3; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">get in touch →</a>
+</div>
 </nav>
 </header>
 
-<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 112px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 112px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
 <div style="font-size: 13px; color: #9A978E; letter-spacing: 0.08em"><span style="color: #F7931A">$</span> bitcoin courses &amp; consultations</div>
 <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 128px); line-height: 0.92; letter-spacing: -0.04em">Martin<br>Jurco<span style="color: #F7931A">.</span></h1>
